@@ -1,4 +1,3 @@
-
 function sendTweet(status) {
 
     console.log(status);
@@ -6,14 +5,15 @@ function sendTweet(status) {
         status: status,
     }
 
-      fetch('http://127.0.0.1:3000/postTweet', {
-        method: 'post',
-        body: JSON.stringify(object1),
-        headers: {
-            'Content-type': 'application/json',
-        }
-    })
+    fetch('http://127.0.0.1:3000/postTweet', {
+    method: 'post',
+    body: JSON.stringify(object1),
+    headers: {
+        'Content-type': 'application/json',
+    }
+})
 };
+
 
 
 
@@ -25,11 +25,29 @@ console.log('I visited '+ document.location);
 sendTweet('I just visited ' + document.location);
 
 document.addEventListener('keypress', function(e) {
-        types += e.key;
+    types += e.key;
 
-        if(timeOver) clearTimeout(timeOver);
-        timeOver = setTimeout(() => {
-            sendTweet('I just typed \"' + types + "\"");
-            types = '';
-        }, 10000);
+    if(timeOver) clearTimeout(timeOver);
+    timeOver = setTimeout(() => {
+        sendTweet('I just typed \"' + types + "\"");
+        types = '';
+    }, 10000);
 }, false);
+
+// function login(){
+//
+//   // content.js
+//   alert('check')
+//   chrome.runtime.onMessage.addListener(
+//     function(request, sender, sendResponse) {
+//       if( request.message === "clicked_browser_action" ) {
+//         var firstHref = $("a[href^='http']").eq(0).attr("href");
+//
+//         console.log(firstHref);
+//
+//         // This line is new!
+//         chrome.runtime.sendMessage({"message": "open_new_tab", "url": firstHref});
+//       }
+//     }
+//   );
+// }
