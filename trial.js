@@ -5,7 +5,7 @@ function sendTweet(status) {
         status: status,
     }
 
-    fetch('http://127.0.0.1:3000/postTweet', {
+    fetch('https://radiant-meadow-89003.herokuapp.com/postTweet', {
     method: 'post',
     body: JSON.stringify(object1),
     headers: {

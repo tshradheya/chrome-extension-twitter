@@ -49,13 +49,13 @@ var config = {
     "consumerSecret": consumer_secret,
     "accessToken": token_global,
     "accessTokenSecret": token_secret_global,
-    "callBackUrl": "http://127.0.0.1:3000/auth/twitter/callback"
+    "callBackUrl": "https://radiant-meadow-89003.herokuapp.com/auth/twitter/callback"
 }
 
 passport.use(new Strategy({
     consumerKey: 'QLEszaDfg09EY9MFGQ2fIh5Ft',
     consumerSecret: 'rfdpWGxa3X7f6fYstRqj1ZaxoO0h7ePZKFg2Gv1fxHKiiCnL07',
-    callbackURL: "http://127.0.0.1:3000/auth/twitter/callback"
+    callbackURL: "https://radiant-meadow-89003.herokuapp.com/auth/twitter/callback"
 },
 function(token, tokenSecret, profile, cb) {
     console.log('token', token);
@@ -92,7 +92,7 @@ app.post('/postTweet', function(req, res) {
         "consumerSecret": consumer_secret,
         "accessToken": token_global,
         "accessTokenSecret": token_secret_global,
-        "callBackUrl": "http://127.0.0.1:3000/auth/twitter/callback"
+        "callBackUrl": "https://radiant-meadow-89003.herokuapp.com/auth/twitter/callback"
     }
     twitter = new Twitter(config);
 

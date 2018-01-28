@@ -5,7 +5,7 @@
 //         status: status,
 //     }
 //
-//     fetch('http://127.0.0.1:3000/postTweet', {
+//     fetch('https://radiant-meadow-89003.herokuapp.com/postTweet', {
 //     method: 'post',
 //     body: JSON.stringify(object1),
 //     headers: {
@@ -24,7 +24,7 @@ function getBgColors (tab) {
   // far is working as expected.
   //alert('The browser action was clicked! Yay!');
 
-  window.open('http://127.0.0.1:3000/login/twitter')
+  window.open('https://radiant-meadow-89003.herokuapp.com/login/twitter')
   // alert('I visited '+ document.location);
   // sendTweet('I just visited ' + document.location);
   //
