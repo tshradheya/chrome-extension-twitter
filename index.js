@@ -68,7 +68,7 @@ function(token, tokenSecret, profile, cb) {
 
 app.get('/', (req, res) => {
 
-    res.send("Hello World");
+    res.send("Login Successful. Please close this tab and continue browsing");
 
 })
 
