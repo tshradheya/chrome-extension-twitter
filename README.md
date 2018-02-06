@@ -11,9 +11,9 @@ With blood, sweat and plenty of tears. Just kidding. Over the last 24 hours, my 
 
 ## Teammates
 
-[Yash Chowdhary](https://github.com/yash-chowdhary)
-[Sashankh Chengavalli Kumar](https://github.com/chengsashankh)
-[Ronak Lakhotia](https://github.com/RonakLakhotia)
+[Yash Chowdhary](https://github.com/yash-chowdhary)  
+[Sashankh Chengavalli Kumar](https://github.com/chengsashankh)  
+[Ronak Lakhotia](https://github.com/RonakLakhotia)  
 
 ## Demo of the Extension on a dummy twitter account
 
